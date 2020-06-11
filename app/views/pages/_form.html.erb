@@ -1,0 +1,15 @@
+<section class="level-item">
+  <%= form_with url: '/upload', local: true do |f| %>
+      <% flash.each do |type, msg|%>
+        <div id="notice">
+          <%= msg %>
+        </div>
+      <% end %>
+      <div class="field">
+        <%= f.file_field :file, accept: '.csv' %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Submit", class: "button is-primary" %>
+      </div>
+  <% end %>
+</section>
