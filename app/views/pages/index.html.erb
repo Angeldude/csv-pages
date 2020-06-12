@@ -21,12 +21,13 @@
 </ul>
 
 <script>
-var toggler = document.getElementsByClassName("caret");
+const toggler = document.querySelectorAll('.caret')
+let transform = Array.from(toggler)
 
-for (let i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function() {
+transform.forEach(nested => {
+  nested.addEventListener("click", function() {
     this.parentElement.querySelector(".nested").classList.toggle("active");
     this.classList.toggle("caret-down");
-  });
-}
+  })
+})
 </script>
