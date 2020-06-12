@@ -16,6 +16,7 @@ This project takes a CSV file with a nested web page structure.
 * There is no validation for file type
 * There's no telling what would happen if a csv with one column or > 2 columns would be uploaded
 * Same for a csv with no rows
+* Before any CSV is uploaded, a lone caret appears.
 
 ## Planning
 
